@@ -1,0 +1,88 @@
+@import "./normalize.css";
+
+/*:root -> 获取根元素html*/
+:root {
+  --color-text: #666;
+  --color-high-text: #ff5777;
+  --color-tint: #ff8198;
+  --color-background: #fff;
+  --font-size: 14px;
+  --line-height: 1.5;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+  user-select: none; /* 禁止用户鼠标在页面上选中文字/图片等 */
+  -webkit-tap-highlight-color: transparent; /* webkit是苹果浏览器引擎，tap点击，highlight背景高亮，color颜色，颜色用数值调节 */
+  background: var(--color-background);
+  color: var(--color-text);
+  /* rem vw/vh */
+  width: 100vw;
+  font-size: 20px;
+  background: #F0F0F0;
+}
+
+a {
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+
+.clear-fix::after {
+  clear: both;
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+.clear-fix {
+  zoom: 1;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+.flex{
+  display: flex;
+}
+.flex-justify-end{
+  justify-content:flex-end;
+}
+.flex-justtify-between{
+  justify-content: space-between;
+}
+.flex-justify-around{
+  justify-content: space-around;
+}
+.flex-align-center{
+  align-items: center;
+}
+.flex-align-end{
+  align-items: flex-end;
+}
+.flex-direction-column{
+  flex-direction: column;
+}
+.flex-direction-reserve{
+  flex-direction: column-reverse;
+}
+.flex-wrapp{
+  flex-wrap: wrap;
+}
+.block{
+  display: block;
+}
